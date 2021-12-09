@@ -126,7 +126,7 @@ def export_tweets(request):
         user_prediction = body['user_prediction']
         user_prediction = pd.DataFrame(user_prediction.values(), columns=['user_prediction'])
     else:
-        user_prediction = pd.DataFrame([None for x in range(0, len(tweets))], columns=['user_prediction'])
+        user_prediction = pd.DataFrame(['NA' for x in range(0, len(tweets))], columns=['user_prediction'])
     twitter_data = pd.concat([user_session, tweets, ml_prediction,
                               user_prediction], axis=1)
     # Save File to /Data/Exported_Twitter_Data.csv file
