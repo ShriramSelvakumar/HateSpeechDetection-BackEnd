@@ -15,7 +15,7 @@ pip install -r requirements.txt
 If above command not working try
 
 ```
-python -m pip install pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ## Running server
