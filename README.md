@@ -6,20 +6,22 @@
 
 Afetr installing python, use below command to install required packages
 
+_In project directory_
+
 ```
-pip install django djangorestframework nltk scikit-learn pandas tweepy
+pip install -r requirements.txt
 ```
 
 If above command not working try
 
 ```
-python -m pip install django djangorestframework nltk scikit-learn pandas tweepy
+python -m pip install pip install -r requirements.txt
 ```
 
 ## Running server
 _In project directory_
 
-Run below command to _update changes_ in project
+Run below commands to _update changes_ in project
 ```
 python .\manage.py makemigrations
 python .\manage.py migrate
