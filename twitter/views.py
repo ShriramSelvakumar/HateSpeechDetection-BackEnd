@@ -29,7 +29,7 @@ def new_user(request):
         consumer_secret = request.POST.get("consumer_secret", '')
         access_token = request.POST.get("access_token", '')
         access_token_secret = request.POST.get("access_token_secret", '')
-        user_session = 'oiqxx48zqh3njeosu8v1i0auam78mobf'
+        user_session = request.session.session_key
         print([consumer_key, consumer_secret, access_token, access_token_secret, user_session])
         queryset = Users.objects.filter(user_session=user_session)
         if queryset.exists():
